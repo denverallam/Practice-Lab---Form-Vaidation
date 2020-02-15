@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a New Event</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="form.js"></script>
+
+</head>
+
+<body>
+
+
+    <div id="container">
+        <form id="forms">
+            <fieldset>
+                <div id="firstpart">
+                    <div class="box">
+                        <label>Event Type:</label>
+                        <select id="eventType" required>
+                            <option value= "none" selected disabled>Choose One</option>
+                            <option value="General Assembly">General Assembly</option>
+                            <option value="Membership Renewal">Organization Recruitment</option>
+                            <option value="Seminar">Organization Seminar</option>
+                        </select>
+                    </div>
+
+                    <div class="box">
+                        <label>Event Title:</label>
+                        <input type="text" class="input" id="eventTitle" required>
+                    </div>
+
+                    <div class="box">
+                        <label>Event Dates:</label>
+                        <input class="input" id="startDate" type="date" required>
+                        to <input class="input" id="endDate" type="date" required>
+                    </div>
+
+
+                    <div class="box">
+                        <label>Posting Date:</label>
+                        <input class="input" id="postDate" type="date" required>
+                    </div>
+                </div>
+                <div id="secondpart">
+                    <div class="box">
+                        <input class="checkbox" type="checkbox">
+                        Is Registration Required?
+                    </div>
+                    <div class="box">
+                        <input class="checkbox" type="checkbox">
+                        Is this event associated with any Family Prorams?</div>
+                    <div class="box">
+                        <input class="checkbox" type="checkbox">
+                        Upon Registration Completion, Are Users to Receive an Auto Generated Event?
+                    </div>
+                    <div class="box">
+                        <input class="checkbox" type="checkbox">
+                        Is There a Point of Contact?
+                    </div>
+                    <div class="box">
+                        <input class="checkbox" type="checkbox">
+                        Is there a Hosting Command Point of Contact?
+                    </div>
+
+                    <div id="buttons">
+                        <input id="submit" type="submit" value="Save" onclick="verify()">
+                        <input id="cancel" type="button" value="Cancel" onclick="reset()">
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

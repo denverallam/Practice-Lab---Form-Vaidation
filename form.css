@@ -1,0 +1,61 @@
+body{
+    font-size: 16px;
+    font-weight: bold;
+}
+#container{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+fieldset{
+    padding: 30px 70px 50px 70px;
+}
+#container .box{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+#container #firstpart .box label{
+    width: 190px;
+}
+
+#container  #firstpart .box input,select{
+        width: 125px;
+        outline: none;
+        height: 25px;
+        border: 1px solid;
+        margin-left: 10px;
+        margin-right: 10px;
+}
+
+#container  #firstpart .box select{
+    width: 290px;
+}
+
+#container  #firstpart #eventTitle{
+    width: 550px;
+}
+
+#container #secondpart .box .checkbox{
+    display: block;
+    width: 15 px;
+    height: 15 px;
+    margin-right: 10px;
+}
+
+#container #secondpart #buttons{
+    height: 30px;
+    width: 200px;
+    margin: 50px 0px 0px 0px;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%);
+}
+#container #secondpart #buttons input{
+    background-color: gainsboro;
+    width: 48%;
+    height: 100%;
+    border: 1px solid;
+}

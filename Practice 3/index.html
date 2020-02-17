@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Event</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/form.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <form>
+            <div>
+                <fieldset>
+                    <legend>Create New Event</legend>
+                    <div>
+                        <div class="box">
+                            <label>Event Type:</label>
+                            <select id="eventType" required>
+                                <option value="" selected disabled>Choose One</option>
+                                <option value="Seminar">Seminar</option>
+                                <option value="General Assembly">General Assembly</option>
+                            </select>
+                        </div>
+                        <div class="box">
+                            <label>Event Title:</label>
+                            <input type="text" id="eventTitle" required>
+                        </div>
+                        <div class="box">
+                            <label>Event Dates:</label>
+                            <input type="date" id="startDate" required>
+                            to
+                            <input type="date" id="endDate" required>
+                        </div>
+                        <div class="box">
+                            <label>Posting Date:</label>
+                            <input type="date" id="postDate" required>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="checkbox">
+                        <label>Is Registration Required?</label>
+                    </div>
+                    <div>
+                        <input type="checkbox">
+                        <label>Is this Event Associated with any Family Programs?</label>
+                    </div>
+                    <div>
+                        <input type="checkbox">
+                        <label>Upon Registration Completion, Are Users to Receive an Auto Generated Email?</label>
+                    </div>
+                    <div>
+                        <input type="checkbox">
+                        <label>Is There a Point Of Contact?</label>
+                    </div>
+                    <div>
+                        <input type="checkbox">
+                        <label>Is There a Hosting Command Point of Contact?</label>
+                    </div>
+                    <div id="button">
+                        <input type="submit" value="Submit" onclick="verify()">
+                        <input type="reset" value="Cancel">
+                    </div>
+                </fieldset>
+            </div>
+    </div>
+    </form>
+</body>
+
+</html>

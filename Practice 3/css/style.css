@@ -1,0 +1,60 @@
+body{
+    font-size: 16px;
+}
+#container{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+fieldset{
+    padding: 30px 70px 30px 70px;
+}
+#container .box{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.box label{
+    width: 190px;
+}
+
+.box input,select{
+        width: 125px;
+        outline: none;
+        height: 25px;
+        border: 1px solid;
+        margin-left: 10px;
+        margin-right: 10px;
+}
+
+.box select{
+    width: 290px;
+}
+
+#eventTitle{
+    width: 550px;
+}
+
+.checkbox{
+    display: block;
+    width: 15 px;
+    height: 15 px;
+    margin-right: 10px;
+}
+
+ #button{
+    height: 30px;
+    width: 200px;
+    margin: 50px 0px 0px 0px;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%);
+}
+#button input{
+    background-color: gainsboro;
+    width: 48%;
+    height: 100%;
+    border: 1px solid;
+}

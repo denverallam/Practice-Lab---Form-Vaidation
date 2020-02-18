@@ -1,0 +1,56 @@
+body{
+    background-color: black;
+    font-size: 15px;
+    color: white;
+}
+
+#container{
+    background-color: gray;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: 5px solid;
+    border-color:white;
+}
+
+fieldset{
+    height: 100%;
+    padding: 40px 100px 20px 40px;
+    border: 10px solid;
+    border-color: black;
+}
+
+#container .box{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+span{
+    margin-left: 15px;
+    width: 50px;
+}
+#container .box label{
+    width: 120px;
+}
+
+#container .input, select{
+    width: 150px;
+    height: 20px;
+    border: 1px solid;
+}
+#container select{
+    width: 150px;
+}
+
+.button{
+    padding: 0px;
+    width: 70px;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+#alert{
+    height: 30px;
+    width: 200px;
+}
